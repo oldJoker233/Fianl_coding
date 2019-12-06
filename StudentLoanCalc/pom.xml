@@ -12,8 +12,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
-					<release>12</release>
-					<compilerArgs>--enable-preview</compilerArgs>
+					<release>13</release>
 				</configuration>
 			</plugin>
 
@@ -23,7 +22,7 @@
 				<artifactId>javafx-maven-plugin</artifactId>
 				<version>0.0.2</version>
 				<configuration>
-					<mainClass>app.StudentLoanCalc</mainClass>
+					<mainClass>app.StudentCalc</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -32,7 +31,7 @@
 
 	<properties>
 		<!-- Generic properties -->
-		<java.version>1.12</java.version>
+		<java.version>1.13</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -81,55 +80,55 @@
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
-			<version>12</version>
+			<version>13</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-media</artifactId>
-			<version>12</version>
+			<version>13</version>
 			<classifier>win</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-media</artifactId>
-			<version>12</version>
+			<version>13</version>
 			<classifier>mac</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-media</artifactId>
-			<version>12</version>
+			<version>13</version>
 			<classifier>linux</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-graphics</artifactId>
-			<version>12</version>
+			<version>13</version>
 			<classifier>win</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-graphics</artifactId>
-			<version>12</version>
+			<version>13</version>
 			<classifier>mac</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-graphics</artifactId>
-			<version>12</version>
+			<version>13</version>
 			<classifier>linux</classifier>
 		</dependency>
 
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-fxml</artifactId>
-			<version>12</version>
+			<version>13</version>
 		</dependency>
 
 	</dependencies>
