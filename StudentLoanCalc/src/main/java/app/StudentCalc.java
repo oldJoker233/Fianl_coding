@@ -33,11 +33,14 @@ public class StudentCalc extends Application {
 		try {
 
 			FXMLLoader loader = new FXMLLoader();
-			loader = new FXMLLoader(getClass()
-					.getResource("/app/view/LoanCalcView.fxml"));
+			loader = new FXMLLoader(getClass().getResource("/app/view/LoanCalcView.fxml"));
+			
 			LoanScreen = (BorderPane) loader.load();
 			Scene scene = new Scene(LoanScreen);
 			primaryStage.setScene(scene);
+			
+			scene.getStylesheets().add(getClass().getResource("/app/view/staly.css").toExternalForm());
+			
 			LCVC = loader.getController();
 			LCVC.setMainApp(this);
 			primaryStage.show();
@@ -46,6 +49,4 @@ public class StudentCalc extends Application {
 			e.printStackTrace();
 		}
 	}
-
-
 }
